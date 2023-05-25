@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+#root {
+  --primary: #1d1d1d;
+  --grey200: #d8d8d8;
+  --green500: #26845f;
+  --innit: #16641d;
+  --white: #fff;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  background-color: #ddd;
+  border: 1ppx black solid;
+  padding: 2rem;
+}
+
+form::before {
+  content: "FORM";
+  margin-bottom: 2rem;
+}

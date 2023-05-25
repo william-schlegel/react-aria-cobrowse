@@ -1,0 +1,72 @@
+.formDate {
+  --grey50: #f7f7f7;
+  --grey200: #d8d8d8;
+  --grey600: #616161;
+  --grey900-secondary: #1d1d1d;
+  --red500-primary: #e2001a;
+  --white: #fff;
+
+  --bg-segment: #888;
+  --border-color: var(--grey200);
+  --error: #b50015;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formDate__label {
+  /* typo L */
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.formDate__field {
+  display: flex;
+  border-radius: 5px;
+  padding: 12px 12px 12px 16px;
+  background-color: var(--white);
+  color: var(--grey900-secondary);
+  border: 1px solid var(--border-color);
+  outline: none;
+  width: 100%;
+  /* typo L */
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.formDate__field::placeholder {
+  color: var(--grey600);
+}
+
+.formDate__field:focus,
+.formDate__field:focus-within {
+  --border-color: var(--grey900-secondary);
+}
+.formDate__field.error {
+  --border-color: var(--error);
+}
+
+.formDate__segment {
+  padding: 0 2px;
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+.formDate__segment.placeholder {
+  color: var(--grey200);
+}
+
+.formDate__segment:focus {
+  color: white;
+  background: var(--red500-primary);
+  outline: none;
+  border-radius: 2px;
+}
+
+.formDate__error {
+  /* typo S */
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--error);
+  margin-inline-start: 16px;
+}
